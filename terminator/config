@@ -1,0 +1,33 @@
+[global_config]
+  window_state = fullscreen
+[keybindings]
+  zoom_in = <Super>KP_Add
+  zoom_out = <Super>KP_Subtract
+  go_left = <Alt>p
+  go_right = <Alt>n
+  line_up = <Alt>i
+  line_down = <Alt>k
+  resize_up = <Primary><Shift>oacute
+  resize_down = <Primary><Shift>uacute
+  next_tab = <Alt>l
+  prev_tab = <Alt>j
+  edit_tab_title = <Alt>r
+  layout_launcher = <Alt>o
+[profiles]
+  [[default]]
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = DejaVu Sans Mono Bold 18
+    show_titlebar = False
+    scrollback_infinite = True
+    background_image = = None
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
