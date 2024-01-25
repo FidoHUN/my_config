@@ -1,5 +1,4 @@
 [global_config]
-  window_state = fullscreen
 [keybindings]
   zoom_in = <Super>KP_Add
   zoom_out = <Super>KP_Subtract
