@@ -1,0 +1,68 @@
+    "vim.leader": "<space>",
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.smartRelativeLine": true,
+    "vim.easymotion": true,
+    "vim.useCtrlKeys": false,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["workabench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["i"],
+            "after": ["<up>"]
+        },
+        {
+            "before": ["k"],
+            "after": ["<down>"]
+        },
+        {
+            "before": ["j"],
+            "after": ["<left>"]
+        },
+        {
+            "before": ["l"],
+            "after": ["<right>"]
+        },
+        {
+            "before": ["<leader>", "i"],
+            "after": ["<insert>"]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "after": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": ["workbench.action.previousEditor"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["i"],
+            "after": ["<up>"]
+        },
+        {
+            "before": ["k"],
+            "after": ["<down>"]
+        },
+        {
+            "before": ["j"],
+            "after": ["<left>"]
+        },
+        {
+            "before": ["l"],
+            "after": ["<right>"]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+     {
+         "before": ["j", "j"],
+         "after": ["<esc>" , "<right>"]
+     }
+]
