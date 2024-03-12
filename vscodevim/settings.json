@@ -1,3 +1,4 @@
+    "workbench.colorTheme": "Codey Midnight",
     "vim.leader": "<space>",
     "vim.hlsearch": true,
     "vim.useSystemClipboard": true,
@@ -5,14 +6,6 @@
     "vim.easymotion": true,
     "vim.useCtrlKeys": false,
     "vim.normalModeKeyBindings": [
-        {
-            "before": ["K"],
-            "commands": ["editor.action.showHover"]
-        },
-        {
-            "before": ["<leader>", "n"],
-            "commands": ["workabench.action.toggleSidebarVisibility"]
-        },
         {
             "before": ["i"],
             "after": ["<up>"]
@@ -34,12 +27,8 @@
             "after": ["<insert>"]
         },
         {
-            "before": ["<leader>", "l"],
-            "after": ["workbench.action.nextEditor"]
-        },
-        {
-            "before": ["<leader>", "j"],
-            "after": ["workbench.action.previousEditor"]
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -61,8 +50,8 @@
         }
     ],
     "vim.insertModeKeyBindings": [
-     {
-         "before": ["j", "j"],
-         "after": ["<esc>" , "<right>"]
-     }
-]
+         {
+             "before": ["j", "j"],
+             "after": ["<esc>" , "<right>"]
+         }
+    ]
