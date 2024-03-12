@@ -22,23 +22,5 @@
   {
     "key": "ctrl+o",
     "command": "workbench.action.closeActiveEditor"
-  },
-  {
-    "key": "space l",
-    "command": "workbench.action.nextEditor",
-    "when": "vim.mode == 'Normal'"
-  },
-  {
-    "key": "ctrl+pagedown",
-    "command": "-workbench.action.nextEditor"
-  },
-  {
-    "key": "space j",
-    "command": "workbench.action.previousEditor",
-    "when": "vim.mode == 'Normal'"
-  },
-  {
-    "key": "ctrl+pageup",
-    "command": "-workbench.action.previousEditor"
   }
 ]
