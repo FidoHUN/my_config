@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaults
 [
   {
     "key": "tab",
@@ -9,7 +10,7 @@
     "command": "-selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
-    {
+  {
     "key": "ctrl+tab",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
@@ -20,7 +21,57 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+o",
-    "command": "workbench.action.closeActiveEditor"
+    "key": "ctrl+b",
+    "command": "workbench.action.closeSidebar"
+  },
+  {
+  "command": "runCommands",
+  "key": "ctrl+o",
+    "args": {
+      "commands": [
+        "workbench.action.closeActiveEditor", "workbench.action.closeSidebar"
+      ]
+    }
+  },
+  {
+    "key": "tab",
+    "command": "-tab",
+    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "k",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "down",
+    "command": "-list.focusDown",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "i",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "up",
+    "command": "-list.focusUp",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
   }
 ]
