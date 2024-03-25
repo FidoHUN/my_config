@@ -1,10 +1,32 @@
+{
     "workbench.colorTheme": "Codey Midnight",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.renderLineHighlight": "none",
+    "workbench.startupEditor": "none",
+    "editor.guides.indentation": true,
+    "window.restoreWindows": "none",
+    "workbench.colorCustomizations": {
+        "statusBar.background" : "#0A121C",
+    },
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.activityBar.location": "side",
+    "terminal.integrated.fontSize": 10,
+    "terminal.integrated.allowChords": false,
+    "breadcrumbs.enabled": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "window.zoomLevel": 1,
+    "workbench.sideBar.location": "right",
     "vim.leader": "<space>",
     "vim.hlsearch": true,
     "vim.useSystemClipboard": true,
     "vim.smartRelativeLine": true,
     "vim.easymotion": true,
-    "vim.useCtrlKeys": false,
+    "vim.useCtrlKeys": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 250,
     "vim.normalModeKeyBindings": [
         {
             "before": ["i"],
@@ -27,6 +49,14 @@
             "after": ["<insert>"]
         },
         {
+            "before": ["<leader>", "s", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "s", "g"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
             "before": ["K"],
             "commands": ["editor.action.showHover"]
         }
@@ -47,11 +77,27 @@
         {
             "before": ["l"],
             "after": ["<right>"]
-        }
+        },
+        {
+            "before": ["leader", "s", "w"],
+            "commands": [
+                "editor.action.addSelectionToNextFindMatch",
+                {
+                    "command": "workbench.action.findInFiles",
+                    "args": {
+                    "query": "${selectedText}",
+                    "triggerSearch": true
+                    }
+                },
+                "search.action.focusSearchList",
+                // "list.focusDown",
+            ]
+        },
     ],
     "vim.insertModeKeyBindings": [
-         {
-             "before": ["j", "j"],
-             "after": ["<esc>" , "<right>"]
-         }
-    ]
+        {
+            "before": ["j", "j"],
+            "after": ["<esc>" , "<right>"]
+        }
+    ],
+}
