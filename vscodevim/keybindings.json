@@ -34,11 +34,6 @@
     }
   },
   {
-    "key": "tab",
-    "command": "-tab",
-    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
-  },
-  {
     "key": "alt+l",
     "command": "workbench.action.nextEditor"
   },
