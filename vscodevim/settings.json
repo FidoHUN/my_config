@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Codey Midnight",
     "editor.bracketPairColorization.enabled": false,
     "editor.renderLineHighlight": "none",
     "workbench.startupEditor": "none",
@@ -11,7 +10,7 @@
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "vs-minimal",
-    "workbench.activityBar.location": "side",
+    "workbench.activityBar.location": "default",
     "terminal.integrated.fontSize": 10,
     "terminal.integrated.allowChords": false,
     "breadcrumbs.enabled": false,
@@ -59,6 +58,21 @@
         {
             "before": ["K"],
             "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["leader", "s", "w"],
+            "commands": [
+                "editor.action.addSelectionToNextFindMatch",
+                {
+                    "command": "workbench.action.findInFiles",
+                    "args": {
+                    "query": "${selectedText}",
+                    "triggerSearch": true
+                    }
+                },
+                "search.action.focusSearchList",
+                // "list.focusDown",
+            ]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -77,21 +91,6 @@
         {
             "before": ["l"],
             "after": ["<right>"]
-        },
-        {
-            "before": ["leader", "s", "w"],
-            "commands": [
-                "editor.action.addSelectionToNextFindMatch",
-                {
-                    "command": "workbench.action.findInFiles",
-                    "args": {
-                    "query": "${selectedText}",
-                    "triggerSearch": true
-                    }
-                },
-                "search.action.focusSearchList",
-                // "list.focusDown",
-            ]
         },
     ],
     "vim.insertModeKeyBindings": [
